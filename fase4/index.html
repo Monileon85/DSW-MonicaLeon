@@ -1,0 +1,460 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Proy Fase3</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+							
+							<span class="icon fa-gem"></span>
+						</div>
+						<div class="content">
+							<div class="inner">
+								<h1>Flexbox VS CSS Grid</h1>
+								<p>Flexbox frente a CSS Grid</p>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="#intro">TEMA</a></li>
+								<li><a href="#work">DIGITALES</a></li>
+								<li><a href="#about">APRENDIZAJE</a></li>
+								<li><a href="#contact">AUTOR</a></li>
+								
+							
+							</ul>
+						</nav>
+						<p>EN LA SIGUIENTE PÁGINA WEB SE PRETENDE EVIDENCIAR LA IMPORTANCIA DE FLEXBOX Y CSS GRID</p>
+
+						
+
+
+
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+
+						<!-- Intro -->
+							<article id="intro">
+								<h2 class="major">TODO LO QUE DEBES SABER</h2>
+								<span class="image main"><img src="images/grid.png" alt="" /></span>
+								<p>El debate entre CSS Grid vs Flexbox es actualmente el tema más candente en la comunidad CSS. Si sigues las noticias del sector, habrás visto surgir últimamente muchos geniales artículos, tales como:
+
+
+									Rachel Andrew blogueó sobre esta cuestión ya en 2016 y más tarde continuó el debate en más detalle.
+									
+									Michelle Barker también respondió al hilo de Twitter de Chris escribiendo otro excelente artículo sobre el tema Grid vs flexbox en su popular blog CSS {In real Life}.
+									
+									La comunidad MDN ha creado algunos exhaustivos documentos sobre las diferencias fundamentales entre Grid y flexbox, que son a día de hoy la mejor documentación disponible sobre el tema.
+									
+									También puedes encontrar muchas otras entradas de blog, artículos, videos y debates en relación al tema en toda la web. Como es probable que el tema se mantenga relevante en el futuro, te recomendaría la lectura de algunos de los anteriores artículos y que desarrolles tu propia postura sobre la cuestión, ya que nada está todavía determinado de forma definitiva.</p>
+								<nav>
+									<ul>
+										<li><a href="#intro1">¿Qué es Flexbox?</a></li>
+										<li><a href="#intro2">¿Qué es CSS Grid?</a></li>
+										
+									
+									</ul>
+							</article>
+
+							
+
+							<article id="intro1">
+								<h2 class="major">¿Qué es Flexbox?</h2>
+								<span class="image main"><img src="images/flex.png" alt="" /></span>
+								<p> Flex es uno de los nuevos valores HTML5 para propiedad CSS display, que nos permite maquetar nuestras páginas web de una manera mucho más fácil de lo que se hacía con la forma tradicional, en la que utilizábamos propiedades como float o position, entre otras.
+									</p>
+								<br>
+								<h1>¿Por qué Flex?</h1>
+								<span class="image main"><img src="images/prue.png" alt="" /></span>
+								<br>
+								<p>
+									Se llama Flex porque tenemos un contenedor, llamado contenedor Flex, que es el elemento que contiene la propiedad display:flex. Desde ese contenedor vamos a poder especificar la alineación de los elementos que hay dentro, el tamaño de los elementos que contienen y distribuir el espacio restante que hay entre los elementos del contenedor Flex, y todo esto en una sola dirección, ya sea una horizontal o vertical. Es decir, podemos distribuir los elementos que contiene la etiqueta sin poner nada dentro de esos elementos
+								</p>
+								<br>
+								<h2>Flex a nivel visual</h2>
+								
+								<p>  Ambos son contenedores Flex, el primero es un contenedor Flex a nivel horizontal que contiene tres elementos flexibles, el segundo es un contenedor Flex a nivel vertical que contiene tres elementos flexibles. Únicamente dando propiedades al contenedor Flex podemos alinear todos los elementos que están dentro del mismo.
+								</p>
+									<br>
+								<nav>
+									<ul>
+									
+										<li><a href="#intro2">¿Qué es CSS Grid?</a></li>
+										
+										
+									
+									</ul>
+							</article>
+<!-- parte de que estamos haciendo  -->
+
+
+<article id="intro2">
+	<h2 class="major">¿QUÉ ES LO MAS IMPORTANTE?</h2>
+	<span class="image main"><img src="images/css.png" alt="" /></span>
+	<p>Hace poco hablábamos de Flexbox, uno de los mecanismos de CSS más útiles en la maquetación de páginas web, incluso lo enfrentábamos con Grid. Sin embargo, teníamos pendiente profundizar un poco más en el propio CSS Grid , otro de los recursos de diseño CSS para disponer con mayor libertad los elementos en una página web o aplicación, algo que hacemos en este artículo.
+
+		Como las últimas versiones de los navegadores ya ofrecen soporte para CSS Grid, sólo es necesario familiarizarse con su forma de trabajar de rejilla y aplicar el nuevo display: grid con el que comenzaremos a usar todas sus característicaspara posicionar los elementos en la página:
+		
+		Ofrece un control total de las dos dimensiones.
+		
+		La ubicación de los ítems es libre; no es una tabla.
+		
+		Es posible colocar los ítem donde necesitemos, en cualquiera de las celdas que el Grid describe, incluso en celdas que no has descrito.	</p>
+	<br>
+	<h1>¿Qué hay de nuevo en CSS Grid?</h1>
+	
+	<br>
+	<p> CSS Grid es un modelo de maquetación CSS en base a una rejilla, algo que podría no parecer tan novedoso, si tenemos en cuenta que diversas librerías de CSS lo habían intentado ya. Sistemas como 960 Grid System fueron pioneros en crear una base de código CSS para que los diseñadores pudieran posicionar los elementos en una distribución de filas y columnas. El propio Bootstrap incluye entre otras cosas un sistema de rejilla. Al final, estos sistemas funcionaron pero tenían varios problemas:
+
+		Agregaban peso al CSS, con código de cientos de clases que muchas veces ni siquiera llegabas a usar. Habia que aplicar constantemente clases y nombre que ensuciaban mucho el HTML.
+		
+		Creaba código de muy difícil mantenimiento, haciendo que el proyecto estuviera ligado de manera muy directa con un sistema propietario   </p>
+	<br>
+
+
+
+	<h2>Grid vs Flexbox</h2>
+	<span class="image main"><img src="images/vs.png" alt="" /></span>
+	<p>   Como veíamos en ¿Grid o Flexbox? ¿Qué resulta más útil en diseño y maquetación web?, Grid va un paso más allá de Flexbox y utiliza las dos dimensiones mientras que Flexbox aplica sólo una. Con Flexbox sólo podías definir qué es lo que tenían que hacer los items en el eje horizontal o en el eje vertical. Cuando en el eje vertical u horizontal se terminaba el espacio, entonces los items se iban colocando dependiendo de las configuración de los atributos Flexbox. Por ejemplo, en el caso de usar flex-wrap, cuando llegaba un ítem que no cabía en la horizontal, se iba a la siguiente fila. Pero tú no controlas esas dos filas, los propios ítems son los que se van acomodando. Te recomendamos consultar los tutoriales de Flexbox que hemos publicado recientemente.	</p>
+		<br>
+	<nav>
+		<ul>
+		
+			<li><a href="#intro1">Que es Flexbox</a></li>
+			
+			
+		
+		</ul>
+</article>
+
+
+						<!-- Work -->
+							<article id="work">
+								<h2 class="major">SOBRE FLEXBOX Y CSS GRID</h2>
+								<span class="image main"><img src="images/puerta.jpg" alt="" /></span>
+								<h2>PRINCIPALES CARACTERÍSTICAS </h2>
+
+								
+
+
+								<p>
+									Grid y flexbox. La diferencia básica entre CSS Grid Layout y CSS Flexbox Layout es que Flexbox se creó para diseños de una dimensión, en una fila o una columna. En cambio CSS Grid Layout se pensó para el diseño bidimensional, en varias filas y columnas al mismo tiempo.
+
+
+								</p>
+								<ul>
+									<li><a href="#intro3">PODCAST</a></li>
+
+									
+									<li><a href="#intro4">NOTICIAS </a></li>
+									
+								</ul>
+								
+								</article>
+
+
+
+<article id="intro3">
+								<h2 class="major">PODCAST</h2>
+								
+								<h1>Audio Flexbox </h1>
+								<span class="image main"><img src="images/prueb.jpg" alt="" /></span>
+								<p>
+									
+								</p>
+								
+								<audio controls>
+								
+									<source src="audio/Flexbox.mp4" type="audio/mp4">
+									
+										
+								</audio>
+
+
+								<h1>Audio Grid</h1>
+								<span class="image main"><img src="images/pod.jpg" alt="" /></span>
+								
+								
+								<audio controls>
+								
+									<source src="audio/Grid.mp4" type="audio/mp4">
+									
+										
+								</audio>
+
+
+
+									<ul>
+									
+										<li><a href="#intro4">NOTICIAS</a></li>
+										
+										
+									
+									</ul>
+							</article>
+
+
+
+
+
+							<article id="intro4">
+								<h2 class="major">NOTICIAS</h2>
+								
+								<h1>Noticia 1 </h1>
+							
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Fl6Rqb3nTfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+								clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								
+								
+
+
+								<h1>Noticia 2 </h1>
+								
+
+									<ul>
+									
+										<li><a href="https://www.mclibre.org/consultar/amaya/css/css-flexbox.html">NOTICIA INVESTIGATIVA</a></li>
+										
+									
+										
+									
+									</ul>
+							</article>
+
+
+
+
+
+
+
+
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Aprendizaje</h2>
+								<span class="image main"><img src="images/fini.jpg" alt="" /></span>
+
+								<h1>LO  APRENDIDO DE LA INVESTIGACIÓN </h1>
+								<p>
+									CSS Grid es mejor para la construcción general de nuestra página, ya que es más fácil modelar nuestra plantilla, y se pueden crear diseños más asimétricos y peculiares. CSS Grid en diseños con filas y columnas. Flexbox es mejor alineando el contenido dentro de los diferentes elementos de la web
+
+									Como se ha podido ver durante todo el artículo, no hay una solución mejor que otra. El mejor sistema de trabajo por el que podemos optar es usar tanto Flexbox como CSS Grid en nuestros proyectos de forma conjunta, ya que cada uno tiene sus puntos fuertes en diferentes cosas. CSS Grid es mejor para la construcción general de nuestra página, ya que es más fácil modelar nuestra plantilla, y se pueden crear diseños más asimétricos y peculiares. CSS Grid en diseños con filas y columnas. Flexbox es mejor alineando el contenido dentro de los diferentes elementos de la web. Flexbox en diseños con filas o columnas. Funciona mejor en una dimensión. Por todo esto, no hay motivos para usar solo Flexbox o CSS Grid. Te recomendamos aprender ambos y usarlos de manera conjunta en tus proyectos.
+								</p>
+
+								<h1>LO  APRENDIDO DE  LA CREACIÓN WEB </h1>
+
+								<span class="image main"><img src="images/progr.png" alt="" /></span>
+								  <p> Del anteriror trabajo se puede evidenciar el uso de diferentes herramientas reconocimiento primeramante el uno del HTML5  y CSS3 y logrando implementar satisfactoriamente FLEX BOX y CSS GRID</p> 
+									
+															   <ul>
+									
+										<li><a href="">PRÓXIMO A INVESTIGACIÓN</a></li>
+										<li><a href="">LO APRENDIDO EN LAS FASES</a></li>
+										
+									
+										
+									
+									</ul>		
+															   
+															   
+															   </article>
+
+
+
+ <!-- cambios nuevos -->
+
+						<!-- About -->
+							<article id="about">
+								<h2 class="major">Aprendizaje</h2>
+								<span class="image main"><img src="images/fini.jpg" alt="" /></span>
+
+								<h1>LO  APRENDIDO DE LA INVESTIGACION </h1>
+								<p>
+									CSS Grid es mejor para la construcción general de nuestra página, ya que es más fácil modelar nuestra plantilla, y se pueden crear diseños más asimétricos y peculiares. CSS Grid en diseños con filas y columnas. Flexbox es mejor alineando el contenido dentro de los diferentes elementos de la web
+
+									Como se ha podido ver durante todo el artículo, no hay una solución mejor que otra. El mejor sistema de trabajo por el que podemos optar es usar tanto Flexbox como CSS Grid en nuestros proyectos de forma conjunta, ya que cada uno tiene sus puntos fuertes en diferentes cosas. CSS Grid es mejor para la construcción general de nuestra página, ya que es más fácil modelar nuestra plantilla, y se pueden crear diseños más asimétricos y peculiares. CSS Grid en diseños con filas y columnas. Flexbox es mejor alineando el contenido dentro de los diferentes elementos de la web. Flexbox en diseños con filas o columnas. Funciona mejor en una dimensión. Por todo esto, no hay motivos para usar solo Flexbox o CSS Grid. Te recomendamos aprender ambos y usarlos de manera conjunta en tus proyectos.
+								</p>
+
+								<h1>LO  APRENDIDO DE DE LA CREACION WEB </h1>
+
+								<span class="image main"><img src="images/progr.png" alt="" /></span>
+								  <p> Del anteriror trabajo se puede evidenciar el uso de diferentes herramientas reconocimiento primeramante el uno del HTML5 y CSS3 y logrando implementar satisfactoriamente FLEX BOX y CSS GRID</p> 
+									
+								  <ul>
+									<li><a href="#intro6">PRÓXIMO A INVESTIGACIÓN</a></li>
+
+									
+									<li><a href="#intro7">LO APRENDIDO EN LAS FASES</a></li>
+									
+								</ul>
+								
+							
+								</article>
+
+
+<article id="intro6">
+								<h2 class="major">PRÓXIMO A INVESTIGACIÓN </h2>
+								
+								<h1>SITIOS RESPONSIVOS CON MEDIA QUERIES Y MEDIDAS PARA MEJORAR EL SEO </h1>
+							
+								<p>
+									Las media queries permiten a las páginas web utilizar diferentes declaraciones de estilo de la hoja de estilos en base al ancho de la pantalla del dispositivo en el que se visualiza el sitio web. En los diseños web responsive, una media query es una declaración CSS que se utiliza como parámetro para saber cuándo utilizar otra declaración de estilo en base a las dimensiones del dispositivo en donde se visualiza la página web. Hay dos maneras de utilizar una media query: utilizando una hoja de estilos externa o escribiendo directamente en la hoja de estilos.
+								
+								</p>
+
+
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/CFKHuTfP8ms" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<h1> trucos para mejorar el posicionamiento SEO con contenido </h1>
+							
+								<p>
+									El SEO es generar contenido de calidad que suscite interés, con una web que resuelva un problema o necesidad, orientada a la forma en la que el usuario busca esa información concreta e indexable por los motores de búsqueda. Eso es el SEO.
+
+Si buscas atajos para salir primero en Google, te doy una pista: no los hay. O mejor dicho, hay pocos, no son tan efectivos, son efímeros, suponen un riesgo importante para tu web y generalmente llevan más trabajo que hacerlo generando valor. Y si quieres generar valor el contenido va a ser tu principal aliado en esta misión
+								</p>
+
+
+								<p>
+									1. Conoce a tus usuarios
+									Lo primero es saber a quién te diriges. Cada público consume la información de forma diferente. Por ejemplo, este post podría llamarse «Tácticas de content marketing para SEO», pero estaría dirigido a un público más reducido y más especializado y los consejos serían diferentes.
+								</p>
+
+								<p>
+									Ten un plan
+El contenido debe planificarse. Debes tener un objetivo claro y numérico -nunca exclusivamente SEO- un público específico y un montón de ideas y ganas de probar.
+									</p>
+									<p>
+										Utiliza tu blog
+Tu blog no es solo una herramienta genial para crear contenido que atraiga a Google logrando posts con un gran posicionamiento natural, sino que te permite:
+
+Generar enlaces: Si generas un contenido fácil de compartir, los usuarios lo compartirán, links incluidos, lo que beneficiará al dominio en su conjunto. No todo es que el post sea bueno, también ayuda que tu blog sea una fuente fiable y reputada.	</p>
+
+									<ul>
+									
+										<li><a href="#intro7">LO APRENDIDO EN LAS FASES</a></li>
+										
+									
+										
+									
+									</ul>
+							</article>
+
+
+
+							<article id="intro7">
+								<h2 class="major">LO APRENDIDO EN LAS FASES</h2>
+								
+								
+							
+								<p>
+								Se realizo una pequeña encuesta de lo trabajado a lo largo de esta actividad 
+								</p>
+								<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeccAR84XBrsN8WkKupF2u84EGYFXZy7DLZAHJeGM1Oyad0og/viewform?embedded=true" width="640" height="1594" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+
+									<ul>
+									
+										<li><a href="#intro6">PRÓXIMO A INVESTIGACIÓN</a></li>
+										
+									
+										
+									
+									</ul>
+							</article>
+
+
+
+<!-- FINAL DE LO NUEVO -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+						<!-- Contact -->
+							<article id="contact">
+								<h2 class="major">Autor</h2>
+								
+								<h1>Información personal </h1>
+								<span class="image main"><img src="images/moni.jpeg" alt="" /></span>
+								<p>Soy estudiante de Ingeniería de Sistemas,  vivo en la ciudad de Bogotá y pertenezco al CEAD Jorge Acevedo y Gómez. </p>
+								<p>Trabajo actualmente en una EPS en Liquidación liderando el proceso de Recobros de la organización.  </p>
+								<p> Me gusta bailar, escuchar música y asistir a conciertos</p>
+								<p>REDES SOCIALES </p>
+								<p> Fb: Monica Leon Acosta</p>
+								<p>  Instagram: monicleona </p>
+								<p> Twitter: @monileon85  </p>
+															   
+								
+														   
+															   
+															   
+							</article>
+
+								<ul class="icons">
+									
+									<li><a href="https://web.facebook.com/UniversidadUNAD/?_rdc=1&_rdr" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+									
+								</ul>
+							</article>
+
+
+
+
+
+					</code></pre>
+								</section>
+
+								<section>
+									<h3 class="major">Lists</h3>
+	
+									
+								</section>
+
+							
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+					
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
